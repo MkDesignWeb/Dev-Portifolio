@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+font-family: "UniSansBold"; src: url("../src/Assets/Fonts/Uni Sans Heavy.otf");
+}
+@font-face {
+font-family: "UniSansThin"; src: url("../src/Assets/Fonts/Uni Sans Thin.otf");
+}
+
+*{
+@apply z-30 
+}
+
+body {
+    @apply bg-black font-sans
+}
