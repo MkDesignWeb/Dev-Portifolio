@@ -2,14 +2,15 @@ import React from 'react';
 import { Button } from '../Components/Buttom/Buttom';
 import logoW from '../Assets/Logo/LogoMKW.svg'
 import logoG from '../Assets/Logo/LogoMKG.svg'
+import seta from '../Assets/Img/Seta.svg'
 
 
 function Home(){
     return(
-    <section>
-        <div className=' h-[427px] w-screen bg-DegTopMB sm:bg-DegTopPC bg-no-repeat bg-cover bg-center absolute top-0 left-0 right-0 z-10'/>
+    <section className='flex flex-col justify-center'>
+        <div className=' h-[427px] bg-DegTopMB sm:bg-DegTopPC bg-no-repeat bg-cover bg-center absolute top-0 left-0 right-0 z-10'/>
         
-        <div className='flex flex-col items-center justify-center mt-10'>
+        <div className='flex flex-col items-center justify-center mt-8'>
         
         <img src="/src/Assets/Logo/LogoMK.svg" className='w-28' data-aos="fade-up" data-aos-duration="900" />
         
@@ -17,21 +18,34 @@ function Home(){
         <h2 className='font-bold text-white text-3xl leading-tight font-UniSansBold'>Matheus Kauan</h2>
         
         </div>
-        <div className='flex justify-center items-start mt-10 gap-5'>
+        <div className='flex justify-center items-start mt-7 gap-5 h-64'>
+            <a href="">
             <Button
             img={logoW}
             title='Web Designer'
-            text="Web designer asdad sdsd dfsdfasd asdasdsa "
+            text="De uma olhada nas minhas especificações em desenvolvimento de sites (Front-end)"
             size={2}
             fill="full"
             />
+            </a>
+            <a href="">
             <Button
             img={logoG}
             title='Web Designer'
-            text="designer grafico asdad sdsd dfsdfasd asdasdsa "
+            text="Veja aqui meus trabalhos de edição e criação de imagens para web"
             size={2}
             fill="border"
             />
+            </a>
+        </div>
+        <div className=' text-white flex  justify-center items-center mt-12 '>
+            <div className='relative'>
+            <div className='flex flex-col items-center'>
+            <span className='font-extralight leading-relaxed'>Veja mais</span>
+            <strong className='text-2xl leading-tight'>Sobre <span className='text-primary'>mim</span></strong>
+            </div>
+            <img src={seta} alt="" className='absolute w-7 top-9 right-[-30px]' />
+            </div>
         </div>
     </section>
 )}
