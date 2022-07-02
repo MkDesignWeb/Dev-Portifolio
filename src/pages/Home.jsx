@@ -3,10 +3,12 @@ import { Button } from '../Components/Buttom/Buttom';
 import logoW from '../Assets/Logo/LogoMKW.svg'
 import logoG from '../Assets/Logo/LogoMKG.svg'
 import seta from '../Assets/Img/Seta.svg'
+import { SobreMim } from '../Components/SobreMim';
 
 
 function Home(){
     return(
+        <>
     <section className='flex flex-col justify-center'>
         <div className=' h-[427px] bg-DegTopMB sm:bg-DegTopPC bg-no-repeat bg-cover bg-center absolute top-0 left-0 right-0 z-10'/>
         
@@ -18,7 +20,7 @@ function Home(){
         <h2 className='font-bold text-white text-3xl leading-tight font-UniSansBold'>Matheus Kauan</h2>
         
         </div>
-        <div className='flex justify-center items-start mt-7 gap-5 h-64'>
+        <div className='flex sm:flex-row flex-col justify-center sm:items-start items-center mt-7 gap-5 h-64'>
             <a href="">
             <Button
             img={logoW}
@@ -31,7 +33,7 @@ function Home(){
             <a href="">
             <Button
             img={logoG}
-            title='Web Designer'
+            title='Designer gráfico'
             text="Veja aqui meus trabalhos de edição e criação de imagens para web"
             size={2}
             fill="border"
@@ -48,5 +50,7 @@ function Home(){
             </div>
         </div>
     </section>
+    <SobreMim />
+    </>
 )}
 export default Home;
